@@ -1,9 +1,8 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 
-
-export default function Header() {
-  const [activeTab, setActiveTab] = useState("Delivery");
+export default function Header(props) {
+  /*const [activeTab, setActiveTab] = useState("Delivery");*/
 
   return (
     <View style={{ flexDirection: "row", alignSelf: "center" }}>
@@ -11,16 +10,36 @@ export default function Header() {
         text="Delivery"
         btnColor="black"
         textColor="white"
-        activeTab={activeTab}
-        setActiveTab={setActiveTab}
+        activeTab={props.activeTab}
+        setActiveTab={props.setActiveTab}
+		style={{ marginTop: 30 }}
       />
 
       <HeaderButton
-        text="TakeAway"
+        text="Takeaway"
         btnColor="white"
         textColor="black"
-        activeTab={activeTab}
-        setActiveTab={setActiveTab}
+        activeTab={props.activeTab}
+        setActiveTab={props.setActiveTab}
+		style={{ marginTop: 30}}
+      />
+
+      <HeaderButton
+        text="Deliver on Train 🚆"
+        btnColor="black"
+        textColor="white"
+        activeTab={props.activeTab}
+        setActiveTab={props.setActiveTab}
+		style={{ marginTop: 30}}
+      />
+
+      <HeaderButton
+        text="Dine-in"
+        btnColor="black"
+        textColor="white"
+        activeTab={props.activeTab}
+        setActiveTab={props.setActiveTab}
+		style={{ marginTop: 30}}
       />
     </View>
   );
@@ -29,17 +48,18 @@ export default function Header() {
 const HeaderButton = (props) => (
   <TouchableOpacity
     style={{
-      paddingHorizontal: 15,
-      paddingVertical: 5,
-      borderRadius: 20,
-      backgroundColor: props.btnColor,
+      backgroundColor: props.activeTab === props.text ? "black" : "white",
+      paddingHorizontal: 10,
+      paddingVertical: 10,
+      borderRadius: 10,
     }}
+    onPress={() => props.setActiveTab(props.text)}
   >
     <Text
       style={{
-        color: props.textColor,
-        fontSize: 13,
-        fontWeight: "900",
+        color: props.activeTab === props.text ? "white" : "black",
+        fontSize: 15,
+        fontWeight: "700",
       }}
     >
       {props.text}
