@@ -3,27 +3,27 @@ import React from "react";
 
 const items = [
   {
-    image: require("/home/bhavjyot/Desktop/BiteMe/front/images/images/shopping-bag.png"),
+    image: require("/home/aryan1812/My_Projects/ByteSynergy2022/Bite-Me/front/images/images/shopping-bag.png"),
     text: "Takeaway",
   },
   {
-    image: require("/home/bhavjyot/Desktop/BiteMe/front/images/images/soft-drink.png"),
+    image: require("/home/aryan1812/My_Projects/ByteSynergy2022/Bite-Me/front/images/images/soft-drink.png"),
     text: "Soft Drinks",
   },
   {
-    image: require("/home/bhavjyot/Desktop/BiteMe/front/images/images/bread.png"),
+    image: require("/home/aryan1812/My_Projects/ByteSynergy2022/Bite-Me/front/images/images/bread.png"),
     text: "Bakery Items",
   },
   {
-    image: require("/home/bhavjyot/Desktop/BiteMe/front/images/images/fast-food.png"),
+    image: require("/home/aryan1812/My_Projects/ByteSynergy2022/Bite-Me/front/images/images/fast-food.png"),
     text: "Fast Foods",
   },
   {
-    image: require("/home/bhavjyot/Desktop/BiteMe/front/images/images/coffee.png"),
+    image: require("/home/aryan1812/My_Projects/ByteSynergy2022/Bite-Me/front/images/images/coffee.png"),
     text: "Coffee & Tea",
   },
   {
-    image: require("/home/bhavjyot/Desktop/BiteMe/front/images/images/desserts.png"),
+    image: require("/home/aryan1812/My_Projects/ByteSynergy2022/Bite-Me/front/images/images/desserts.png"),
     text: "Desserts",
   },
 ];
