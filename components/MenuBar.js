@@ -1,4 +1,4 @@
-import { View, Text, Image, ScrollView } from "react-native";
+import { View, Text, Image, ScrollView, TouchableOpacity } from "react-native";
 import React from "react";
 
 const items = [
@@ -30,6 +30,7 @@ const items = [
 
 export default function MenuBar() {
   return (
+      <TouchableOpacity>
     <View style={{marginTop: 7, backgroundColor: "#ADD8E6"}}>
       <ScrollView horizontal>
         {items.map((item, index) => (
@@ -52,5 +53,6 @@ export default function MenuBar() {
         ))}
       </ScrollView>
     </View>
+    </TouchableOpacity>
   );
 }

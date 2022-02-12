@@ -12,7 +12,7 @@ export default function Header(props) {
         textColor="white"
         activeTab={props.activeTab}
         setActiveTab={props.setActiveTab}
-		style={{ marginTop: 30 }}
+        style={{ marginTop: 30 }}
       />
 
       <HeaderButton
@@ -21,7 +21,7 @@ export default function Header(props) {
         textColor="black"
         activeTab={props.activeTab}
         setActiveTab={props.setActiveTab}
-		style={{ marginTop: 30}}
+        style={{ marginTop: 30 }}
       />
 
       <HeaderButton
@@ -30,7 +30,7 @@ export default function Header(props) {
         textColor="white"
         activeTab={props.activeTab}
         setActiveTab={props.setActiveTab}
-		style={{ marginTop: 30}}
+        style={{ marginTop: 30 }}
       />
 
       <HeaderButton
@@ -39,7 +39,7 @@ export default function Header(props) {
         textColor="white"
         activeTab={props.activeTab}
         setActiveTab={props.setActiveTab}
-		style={{ marginTop: 30}}
+        style={{ marginTop: 30 }}
       />
     </View>
   );
