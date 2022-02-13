@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, ScrollView } from "react-native";
 import React, { useState } from "react";
 
 export default function Header(props) {
@@ -41,6 +41,12 @@ export default function Header(props) {
         setActiveTab={props.setActiveTab}
         style={{ marginTop: 30 }}
       />
+      <ScrollView horizontal>
+      <View style={{alignItems: "center"}}>
+        <Text>BiteMe</Text>
+      </View>
+      </ScrollView>
+
     </View>
   );
 }
